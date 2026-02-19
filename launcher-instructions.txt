@@ -1,0 +1,12 @@
+php artisan serve
+npm run dev
+
+Luego abre en el navegador:
+
+http://127.0.0.1:8000/login
+o
+http://localhost:8000/login
+
+También existe registro en:
+
+http://127.0.0.1:8000/register
