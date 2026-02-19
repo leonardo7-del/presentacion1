@@ -12,10 +12,10 @@ import { login } from '@/routes';
 export default function ForgotPassword({ status }: { status?: string }) {
     return (
         <AuthLayout
-            title="Olvide mi contrasena"
+            title="Olvidé mi contraseña"
             description="Ingresa tu correo para recibir un enlace de recuperacion"
         >
-            <Head title="Recuperar contrasena" />
+            <Head title="Recuperar contraseña" />
 
             {status && (
                 <div className="mb-4 text-center text-sm font-medium text-green-600">
@@ -28,7 +28,7 @@ export default function ForgotPassword({ status }: { status?: string }) {
                     {({ processing, errors }) => (
                         <>
                             <div className="grid gap-2">
-                                <Label htmlFor="email">Correo electronico</Label>
+                                <Label htmlFor="email">Correo electrónico</Label>
                                 <Input
                                     id="email"
                                     type="email"
@@ -59,7 +59,7 @@ export default function ForgotPassword({ status }: { status?: string }) {
 
                 <div className="space-x-1 text-center text-sm text-muted-foreground">
                     <span>O vuelve a</span>
-                    <TextLink href={login()}>iniciar sesion</TextLink>
+                    <TextLink href={login()}>iniciar sesión</TextLink>
                 </div>
             </div>
         </AuthLayout>

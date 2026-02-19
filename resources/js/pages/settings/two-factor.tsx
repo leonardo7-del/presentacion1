@@ -58,7 +58,7 @@ export default function TwoFactor({
                             <Badge variant="default">Activado</Badge>
                             <p className="text-muted-foreground">
                                 Con doble factor activo, deberas ingresar un
-                                codigo seguro al iniciar sesion desde tu
+                                código seguro al iniciar sesión desde tu
                                 aplicacion autenticadora.
                             </p>
 

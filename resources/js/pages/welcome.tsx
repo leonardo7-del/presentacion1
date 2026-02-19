@@ -33,7 +33,7 @@ export default function Welcome({
                                     href={login()}
                                     className="rounded-md bg-primary px-4 py-2 text-primary-foreground"
                                 >
-                                    Iniciar sesion
+                                    Iniciar sesión
                                 </Link>
 
                                 {canRegister && (

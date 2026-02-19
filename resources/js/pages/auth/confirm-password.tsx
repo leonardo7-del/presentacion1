@@ -10,21 +10,21 @@ import { store } from '@/routes/password/confirm';
 export default function ConfirmPassword() {
     return (
         <AuthLayout
-            title="Confirma tu contrasena"
-            description="Esta es un area segura. Confirma tu contrasena para continuar."
+            title="Confirma tu contraseña"
+            description="Esta es un área segura. Confirma tu contraseña para continuar."
         >
-            <Head title="Confirmar contrasena" />
+            <Head title="Confirmar contraseña" />
 
             <Form {...store.form()} resetOnSuccess={['password']}>
                 {({ processing, errors }) => (
                     <div className="space-y-6">
                         <div className="grid gap-2">
-                            <Label htmlFor="password">Contrasena</Label>
+                            <Label htmlFor="password">Contraseña</Label>
                             <Input
                                 id="password"
                                 type="password"
                                 name="password"
-                                placeholder="Contrasena"
+                                placeholder="Contraseña"
                                 autoComplete="current-password"
                                 autoFocus
                             />
@@ -39,7 +39,7 @@ export default function ConfirmPassword() {
                                 data-test="confirm-password-button"
                             >
                                 {processing && <Spinner />}
-                                Confirmar contrasena
+                                Confirmar contraseña
                             </Button>
                         </div>
                     </div>

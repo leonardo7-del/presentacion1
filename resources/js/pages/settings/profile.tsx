@@ -39,7 +39,7 @@ export default function Profile({
                     <Heading
                         variant="small"
                         title="Informacion del perfil"
-                        description="Actualiza tu correo electronico"
+                        description="Actualiza tu correo electrónico"
                     />
 
                     <Form
@@ -52,7 +52,7 @@ export default function Profile({
                         {({ processing, recentlySuccessful, errors }) => (
                             <>
                                 <div className="grid gap-2">
-                                    <Label htmlFor="email">Correo electronico</Label>
+                                    <Label htmlFor="email">Correo electrónico</Label>
 
                                     <Input
                                         id="email"
@@ -62,7 +62,7 @@ export default function Profile({
                                         name="email"
                                         required
                                         autoComplete="username"
-                                        placeholder="Correo electronico"
+                                        placeholder="Correo electrónico"
                                     />
 
                                     <InputError

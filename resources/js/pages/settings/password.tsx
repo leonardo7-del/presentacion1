@@ -14,7 +14,7 @@ import { edit } from '@/routes/user-password';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Contrasena',
+        title: 'Contraseña',
         href: edit().url,
     },
 ];
@@ -25,16 +25,16 @@ export default function Password() {
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Contrasena" />
+            <Head title="Contraseña" />
 
-            <h1 className="sr-only">Configuracion de contrasena</h1>
+            <h1 className="sr-only">Configuración de contraseña</h1>
 
             <SettingsLayout>
                 <div className="space-y-6">
                     <Heading
                         variant="small"
-                        title="Actualizar contrasena"
-                        description="Usa una contrasena larga y segura para proteger tu cuenta"
+                        title="Actualizar contraseña"
+                        description="Usa una contraseña larga y segura para proteger tu cuenta"
                     />
 
                     <Form
@@ -63,7 +63,7 @@ export default function Password() {
                             <>
                                 <div className="grid gap-2">
                                     <Label htmlFor="current_password">
-                                        Contrasena actual
+                                        Contraseña actual
                                     </Label>
 
                                     <Input
@@ -73,7 +73,7 @@ export default function Password() {
                                         type="password"
                                         className="mt-1 block w-full"
                                         autoComplete="current-password"
-                                        placeholder="Contrasena actual"
+                                        placeholder="Contraseña actual"
                                     />
 
                                     <InputError
@@ -83,7 +83,7 @@ export default function Password() {
 
                                 <div className="grid gap-2">
                                     <Label htmlFor="password">
-                                        Nueva contrasena
+                                        Nueva contraseña
                                     </Label>
 
                                     <Input
@@ -93,7 +93,7 @@ export default function Password() {
                                         type="password"
                                         className="mt-1 block w-full"
                                         autoComplete="new-password"
-                                        placeholder="Nueva contrasena"
+                                        placeholder="Nueva contraseña"
                                     />
 
                                     <InputError message={errors.password} />
@@ -101,7 +101,7 @@ export default function Password() {
 
                                 <div className="grid gap-2">
                                     <Label htmlFor="password_confirmation">
-                                        Confirmar contrasena
+                                        Confirmar contraseña
                                     </Label>
 
                                     <Input
@@ -110,7 +110,7 @@ export default function Password() {
                                         type="password"
                                         className="mt-1 block w-full"
                                         autoComplete="new-password"
-                                        placeholder="Confirmar contrasena"
+                                        placeholder="Confirmar contraseña"
                                     />
 
                                     <InputError
@@ -123,7 +123,7 @@ export default function Password() {
                                         disabled={processing}
                                         data-test="update-password-button"
                                     >
-                                        Guardar contrasena
+                                        Guardar contraseña
                                     </Button>
 
                                     <Transition

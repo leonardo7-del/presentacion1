@@ -49,7 +49,7 @@ export default function DeleteUser() {
                         </DialogTitle>
                         <DialogDescription>
                             Al eliminar tu cuenta, todos los datos se borraran
-                            de forma permanente. Ingresa tu contrasena para
+                            de forma permanente. Ingresa tu contraseña para
                             confirmar.
                         </DialogDescription>
 
@@ -69,7 +69,7 @@ export default function DeleteUser() {
                                             htmlFor="password"
                                             className="sr-only"
                                         >
-                                            Contrasena
+                                            Contraseña
                                         </Label>
 
                                         <Input
@@ -77,7 +77,7 @@ export default function DeleteUser() {
                                             type="password"
                                             name="password"
                                             ref={passwordInput}
-                                            placeholder="Contrasena"
+                                            placeholder="Contraseña"
                                             autoComplete="current-password"
                                         />
 

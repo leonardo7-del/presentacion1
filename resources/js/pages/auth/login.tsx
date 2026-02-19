@@ -23,9 +23,9 @@ export default function Login({
     return (
         <AuthLayout
             title="Inicia sesion en tu cuenta"
-            description="Ingresa tu correo y contrasena para continuar"
+            description="Ingresa tu correo y contraseña para continuar"
         >
-            <Head title="Iniciar sesion" />
+            <Head title="Iniciar sesión" />
 
             <Form
                 {...store.form()}
@@ -36,7 +36,7 @@ export default function Login({
                     <>
                         <div className="grid gap-6">
                             <div className="grid gap-2">
-                                <Label htmlFor="email">Correo electronico</Label>
+                                <Label htmlFor="email">Correo electrónico</Label>
                                 <Input
                                     id="email"
                                     type="email"
@@ -52,14 +52,14 @@ export default function Login({
 
                             <div className="grid gap-2">
                                 <div className="flex items-center">
-                                    <Label htmlFor="password">Contrasena</Label>
+                                    <Label htmlFor="password">Contraseña</Label>
                                     {canResetPassword && (
                                         <TextLink
                                             href="/forgot-password"
                                             className="ml-auto text-sm"
                                             tabIndex={5}
                                         >
-                                            Olvidaste tu contrasena?
+                                            ¿Olvidaste tu contraseña?
                                         </TextLink>
                                     )}
                                 </div>
@@ -70,7 +70,7 @@ export default function Login({
                                     required
                                     tabIndex={2}
                                     autoComplete="current-password"
-                                    placeholder="Contrasena"
+                                    placeholder="Contraseña"
                                 />
                                 <InputError message={errors.password} />
                             </div>
@@ -83,7 +83,7 @@ export default function Login({
                                 data-test="login-button"
                             >
                                 {processing && <Spinner />}
-                                Iniciar sesion
+                                Iniciar sesión
                             </Button>
                         </div>
 

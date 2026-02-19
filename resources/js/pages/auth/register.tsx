@@ -13,7 +13,7 @@ export default function Register() {
     return (
         <AuthLayout
             title="Crear cuenta"
-            description="Ingresa tu correo y contrasena para crear tu cuenta"
+            description="Ingresa tu correo y contraseña para crear tu cuenta"
         >
             <Head title="Registro" />
             <Form
@@ -26,7 +26,7 @@ export default function Register() {
                     <>
                         <div className="grid gap-6">
                             <div className="grid gap-2">
-                                <Label htmlFor="email">Correo electronico</Label>
+                                <Label htmlFor="email">Correo electrónico</Label>
                                 <Input
                                     id="email"
                                     type="email"
@@ -41,7 +41,7 @@ export default function Register() {
                             </div>
 
                             <div className="grid gap-2">
-                                <Label htmlFor="password">Contrasena</Label>
+                                <Label htmlFor="password">Contraseña</Label>
                                 <Input
                                     id="password"
                                     type="password"
@@ -49,7 +49,7 @@ export default function Register() {
                                     tabIndex={2}
                                     autoComplete="new-password"
                                     name="password"
-                                    placeholder="Contrasena"
+                                    placeholder="Contraseña"
                                 />
                                 <InputError message={errors.password} />
                             </div>
@@ -68,7 +68,7 @@ export default function Register() {
                         <div className="text-center text-sm text-muted-foreground">
                             Ya tienes cuenta?{' '}
                             <TextLink href={login()} tabIndex={4}>
-                                Iniciar sesion
+                                Iniciar sesión
                             </TextLink>
                         </div>
                     </>
